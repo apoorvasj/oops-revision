@@ -34,9 +34,44 @@ if(num==1){
 <img width="266" alt="image" src="https://github.com/user-attachments/assets/9d41d0cb-86ee-4d52-9110-8db2295488e2" /> ![image](https://github.com/user-attachments/assets/d1817e74-c282-4af7-9c61-c91bc3ad796c)
 
 <b> Now do you see why the stack overflow occur may occur? This shows the need for a base condition. </b>
+<br><br>
+<h4>Can you model a similar base case and recursive case for Fiboncacci?</h4>
 
+```cpp
+Fib(n) = Fib(n-1) + Fib(n-2) -> recursive case
+Fib(0)=0, Fib(1)=1 -> base case
+```
+<img width="599" alt="image" src="https://github.com/user-attachments/assets/2ad8816e-f56c-4cc9-b43e-cb2b98a80871" />
+<br><br>
+It's like a DFS traversal of this tree.
+<br>
+Try to code factorial and the Fibonacci series.
 
+<h2>Recursion when there are "pending" statements</h2>
 
+```cpp
+#include <stdio.h>
+  void display(int n)
+  {
+    if(n<1) return;
+    else
+      {
+        printf("%d",n);
+        display(n-1);
+        printf("%d",n);
+      }
+  void main()
+  {
+    int n=3;
+    display(3);
+  }
+}
+```
+![image](https://github.com/user-attachments/assets/970684e7-dfb7-47b0-9388-ccc3d4d05bd3)
 
-
+Predict the output. 
+    <details>
+<summary>Show Answer</summary>
+321123
+</details>
 
